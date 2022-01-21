@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+  <!-- Iconic font-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Font 1-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font 2-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/shared_2.css">
+  <link rel="stylesheet" href="../styles/pages.css">
+  <title>Клипсы</title>
+</head>
+
+<body>
+  <div id="arrowTop" hidden><i class="fas fa-chevron-up"></i></div>
+  <div class="background"></div>
+
+  <div class="backdrop-burger"></div>
+  <div class="backdrop-cart"></div>
+  <div class="cart-box">
+    <div class="fa fa-window-close close-btn" aria-hidden="true"></div>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <div class="fa fa-window-close close-btn" aria-hidden="true"></div>
+    <ul class="mobile-nav__items">
+      <li><a href="../index.html" class="mobile-nav__item">Главная</a></li>
+      <li><a href="../products.html" class="mobile-nav__item">Каталог</a></li>
+      <li><a href="../about.html" class="mobile-nav__item">Обо мне</a></li>
+      <li><a href="../reviews.html" class="mobile-nav__item">Отзывы</a></li>
+      <li><a href="../contacts.html" class="mobile-nav__item">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <!-- header section start -->
+  <header class="header" id="header">
+
+    <div class="header__wrap">
+      <a href="#" class="logo">
+        <img src="../images/logo1.png" alt="logo">
+      </a>
+
+      <nav class="header-nav">
+        <ul class="header-nav__items">
+          <li><a href="../index.html" class="header-nav__item"><i class="fas fa-home"></i><span>Главная</span></a></li>
+          <li class="submenu">
+            <a href="products.html" class="header-nav__item active">
+              <i class="fas fa-briefcase"></i><span>Каталог</span> <i class="fas fa-angle-down icon-angle"></i>
+            </a>
+            <ul class="header-submenu__items">
+              <li><a href="bracelets.html" class="header-submenu__item">Браслеты</a></li>
+              <li><a href="brooches.html" class="header-submenu__item">Броши</a></li>
+              <li><a href="bookmark.html" class="header-submenu__item ">Закладки в книги</a></li>
+              <li><a href="rings.html" class="header-submenu__item">Кольца</a></li>
+              <li><a href="decoration-sets.html" class="header-submenu__item">Комплекты украшений</a></li>
+              <li><a href="n-y-decoration.html" class="header-submenu__item">Новогодние украшения</a></li>
+              <li><a href="earrings.html" class="header-submenu__item">Серьги</a></li>
+              <li><a href="resin-earrings.html" class="header-submenu__item">Серьги из эпоксидной смолы</a></li>
+              <li><a href="resin-brooch.html" class="header-submenu__item">Броши из эпоксидной смолы</a></li>
+              <li><a href="neck-jewelry.html" class="header-submenu__item">Украшения на шею</a></li>
+              <li><a href="clips.html" class="header-submenu__item active">Клипсы</a></li>
+              <li><a href="pendants.html" class="header-submenu__item">Кулоны из эпоксидной смолы</a></li>
+            </ul>
+          </li>
+          <li><a href="../about.html" class="header-nav__item"><i class="fas fa-user"></i><span>Обо мне</span></a></li>
+          <li><a href="../reviews.html" class="header-nav__item"><i class="far fa-comments"></i><span>Отзывы</span></a></li>
+          <li><a href="../contacts.html" class="header-nav__item"><i class="fas fa-address-card"></i><span>Контакты</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <div class="fas fa-search header-icons__item search-btn" id="search-btn"></div>
+        <div class="fas fa-shopping-cart header-icons__item" id="cart-btn"></div>
+        <div class="fas fa-bars header-icons__item burger-btn" id="burger-btn"></div>
+      </div>
+    </div>
+
+    <div class="header-bg">
+      <img src="../images/shape-bg.png" alt="">
+    </div>
+
+  </header>
+
+  <form action="#" method="get" id="search-box" class="search-box">
+    <input type="search" name="search" id="search-box__input" placeholder="Поиск..." class="search-box__input">
+    <button type="submit" class="search-box__button"><i class="fas fa-search"></i></button>
+    <label for="search" class="search-box__label">
+    <i class="fas fa-times"></i>
+  </label>
+  </form>
+  <!-- header section ends -->
+
+  <section class="product-type">
+
+    <h1 class="heading">Клипсы</h1>
+
+    <div class="product-type__wrap">
+
+      <div class="wrap__item">
+
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
+        <div class="image">
+          <img src="../images/img/clips/2018-09-12-14-36-48.jpg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>Описание украшения</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>10 руб.</span>
+        </div>
+
+      </div>
+
+      <div class="wrap__item">
+
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
+        <div class="image">
+          <img src="../images/img/clips/2019-02-16-16-45-45.jpg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>Описание украшения</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>10 руб.</span>
+        </div>
+
+      </div>
+
+      <div class="wrap__item">
+
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
+        <div class="image">
+          <img src="../images/img/clips/2019-03-03-14-24-14.jpg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>Описание украшения</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>10 руб.</span>
+        </div>
+
+      </div>
+
+      <div class="wrap__item">
+
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
+        <div class="image">
+          <img src="../images/img/clips/2019-03-24-19-21-54.jpg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>Описание украшения</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>10 руб.</span>
+        </div>
+
+      </div>
+
+      <div class="wrap__item">
+
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
+        <div class="image">
+          <img src="../images/img/clips/2019-11-04-14-09-47.jpg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>Описание украшения</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>10 руб.</span>
+        </div>
+
+      </div>
+
+      <div class="wrap__item">
+
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
+        <div class="image">
+          <img src="../images/img/clips/2019-12-06-17-15-43.jpg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>Описание украшения</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>10 руб.</span>
+        </div>
+
+      </div>
+
+      <div class="wrap__item">
+
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
+        <div class="image">
+          <img src="../images/img/clips/2020-04-27-11-14-29.jpg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>Описание украшения</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>10 руб.</span>
+        </div>
+
+      </div>
+
+      <div class="wrap__item">
+
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
+        <div class="image">
+          <img src="../images/img/clips/2020-05-13-09-25-59.jpg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>Описание украшения</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>10 руб.</span>
+        </div>
+
+      </div>
+
+      <div class="wrap__item">
+
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
+        <div class="image">
+          <img src="../images/img/clips/2021-01-11-20-24-06.jpg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>Описание украшения</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>10 руб.</span>
+        </div>
+
+      </div>
+
+      <div class="wrap__item">
+
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
+        <div class="image">
+          <img src="../images/img/clips/2021-03-19-20-34-41.jpg" alt="">
+        </div>
+
+        <div class="content">
+          <h3>Описание украшения</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="price">
+          <span>10 руб.</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer sections starts -->
+  <section class="footer" id="footer">
+
+    <div class="share">
+      <a href="#" class="fab fa-facebook-f share__item"></a>
+      <a href="#" class="fab fa-twitter share__item"></a>
+      <a href="#" class="fab fa-instagram share__item"></a>
+      <a href="#" class="fab fa-vk share__item"></a>
+    </div>
+
+    <div class="links">
+      <a href="../index.html" class="links__item">Главная</a>
+      <a href="../products.html" class="links__item">Каталог</a>
+      <a href="../about.html" class="links__item">Обо мне</a>
+      <a href="../reviews.html" class="links__item">Отзывы</a>
+      <a href="../contacts.html" class="links__item">Контакты</a>
+    </div>
+
+    <div class="credit">created by <span>Dima Banar</span> | all rights reserved</div>
+
+  </section>
+  <!-- footer sections ends -->
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/products.js"></script>
+</body>
+
+</html>

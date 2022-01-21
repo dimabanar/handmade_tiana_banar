@@ -1,0 +1,74 @@
+@import url('shared_2.css');
+.product-type {
+  font-size: 1rem;
+  padding: 2em 0;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.product-type__wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.wrap__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  /* border: 1px red solid; */
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.8em;
+  box-sizing: border-box;
+}
+
+.image {
+  overflow: hidden;
+  height: 20em;
+}
+
+.image img {
+  width: 15em;
+}
+
+.image img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-out;
+}
+
+.icons a {
+  color: white;
+  padding: 1.5rem;
+  border: 1px solid white;
+}
+
+.icons a:hover {
+  background-color: rgb(231, 227, 227);
+  color: rgb(51, 56, 88);
+}
+
+.stars {
+  cursor: pointer;
+}
+
+.product-list {
+  color: black;
+}
+
+.content {
+  text-align: center;
+  line-height: 2em;
+}
+
+.price span {
+  font-size: 1.3em;
+}

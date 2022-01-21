@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/shared_2.css">
+  <link rel="stylesheet" href="styles/animate.css">
+
+  <title>Обо мне</title>
+</head>
+
+<body>
+  <div id="arrowTop" hidden><i class="fas fa-chevron-up"></i></div>
+  <div class="background"></div>
+
+  <div class="backdrop-burger"></div>
+  <div class="backdrop-cart"></div>
+  <div class="cart-box">
+    <div class="fa fa-window-close close-btn" aria-hidden="true"></div>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <div class="fa fa-window-close close-btn" aria-hidden="true"></div>
+    <ul class="mobile-nav__items">
+      <li><a href="index.html" class="mobile-nav__item">Главная</a></li>
+      <li><a href="products.html" class="mobile-nav__item">Каталог</a></li>
+      <li><a href="about.html" class="mobile-nav__item">Обо мне</a></li>
+      <li><a href="reviews.html" class="mobile-nav__item">Отзывы</a></li>
+      <li><a href="contacts.html" class="mobile-nav__item">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <!-- header section start -->
+  <header class="header" id="header">
+
+    <div class="header__wrap">
+      <a href="#" class="logo">
+        <img src="images/logo1.png" alt="logo">
+      </a>
+
+      <nav class="header-nav">
+        <ul class="header-nav__items">
+          <li><a href="index.html" class="header-nav__item"><i class="fas fa-home"></i><span>Главная</span></a></li>
+          <li class="submenu">
+            <a href="products.html" class="header-nav__item ">
+              <i class="fas fa-briefcase"></i><span>Каталог</span> <i class="fas fa-angle-down icon-angle"></i>
+            </a>
+            <ul class="header-submenu__items">
+              <li><a href="pages/bracelets.html" class="header-submenu__item">Браслеты</a></li>
+              <li><a href="pages/brooches.html" class="header-submenu__item">Броши</a></li>
+              <li><a href="pages/bookmark.html" class="header-submenu__item">Закладки в книги</a></li>
+              <li><a href="pages/rings.html" class="header-submenu__item">Кольца</a></li>
+              <li><a href="pages/decoration-sets.html" class="header-submenu__item">Комплекты украшений</a></li>
+              <li><a href="pages/n-y-decoration.html" class="header-submenu__item">Новогодние украшения</a></li>
+              <li><a href="pages/earrings.html" class="header-submenu__item">Серьги</a></li>
+              <li><a href="pages/resin-earrings.html" class="header-submenu__item">Серьги из эпоксидной смолы</a></li>
+              <li><a href="pages/resin-brooch.html" class="header-submenu__item">Броши из эпоксидной смолы</a></li>
+              <li><a href="pages/neck-jewelry.html" class="header-submenu__item">Украшения на шею</a></li>
+              <li><a href="pages/clips.html" class="header-submenu__item">Клипсы</a></li>
+              <li><a href="pages/pendants.html" class="header-submenu__item">Кулоны из эпоксидной смолы</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="header-nav__item active"><i class="fas fa-user"></i><span>Обо мне</span></a></li>
+          <li><a href="reviews.html" class="header-nav__item"><i class="far fa-comments"></i><span>Отзывы</span></a></li>
+          <li><a href="contacts.html" class="header-nav__item"><i class="fas fa-address-card"></i><span>Контакты</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <div class="fas fa-search header-icons__item search-btn" id="search-btn"></div>
+        <div class="fas fa-shopping-cart header-icons__item" id="cart-btn"></div>
+        <div class="fas fa-bars header-icons__item burger-btn" id="burger-btn"></div>
+      </div>
+    </div>
+
+    <div class="header-bg">
+      <img src="images/shape-bg.png" alt="">
+    </div>
+
+  </header>
+
+  <!-- header section ends -->
+
+  <form action="#" method="get" id="search-box" class="search-box">
+    <input type="search" name="search" id="" placeholder="Поиск..." class="search-box__input">
+    <button type="submit" class="search-box__button"><i class="fas fa-search"></i></button>
+    <label for="search" class="search-box__label">
+    <i class="fas fa-times"></i>
+  </label>
+  </form>
+
+  <!-- about section start -->
+  <section class="about">
+
+    <div class="about__wrap">
+      <h1>Немного обо мне</h1>
+      <div class="about-box">
+        <img src="images/20180422_185938.jpg" alt="image_user">
+        <div>
+          <p>Вам нравятся самодельные штуки? Любители помастерить знают, что нет ничего прекраснее, чем засучить рукава и сделать что-нибудь самостоятельно. Кто, если не «хендмейкеры», знают, что вложив в свое дело силы, время и душу, можно из простого сделать
+            что-то стоящее.
+            <p>На протяжении многих лет я работала в банковской сфере, которая уже не позволяла мне наслаждаться тем, что я делаю. Однако, было огромное желание делать что-то из биссера. После из эпоксидной смолы, кожи, ткани. На этом сайте размещены только
+              некоторые мои работы и со временем они будут дополнены.</p>
+            <p>К сожалению, не все товары, предложенные на сайте, есть в наличии. Но, выполнив заказ и немного подождав, вы получите его. Увидеть новинки и популярные работы вы можете на моей странице в социальных сетях.</p>
+        </div>
+        </p>
+      </div>
+    </div>
+
+    <div class="about__order">
+      <h2>Как выполнить заказ товара</h2>
+      <div class="order-box">
+
+        <div class="stage one slideRight">
+          <div class="fab fa-black-tie"></div>
+          <p>Выбрать товар по параметрам</p>
+        </div>
+
+        <div class="stage two slideLeft">
+          <div class="fas fa-shopping-cart"></div>
+          <p>Добавить товар в корзину</p>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="stage three slideRight">
+          <div class="fas fa-box-open"></div>
+          <p>Проверить товары</p>
+        </div>
+
+        <div class="stage four slideLeft">
+          <div class="fas fa-columns"></div>
+          <p>Оформить заказ</p>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="stage five slideRight">
+          <div class="fas fa-phone"></div>
+          <p>Вам перезвонят</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- about section ends -->
+
+  <!-- footer sections starts -->
+  <section class="footer" id="footer">
+
+    <div class="share">
+      <a href="#" class="fab fa-facebook-f share__item"></a>
+      <a href="#" class="fab fa-twitter share__item"></a>
+      <a href="#" class="fab fa-instagram share__item"></a>
+      <a href="#" class="fab fa-vk share__item"></a>
+    </div>
+
+    <div class="links">
+      <a href="index.html" class="links__item">Главная</a>
+      <a href="products.html" class="links__item">Каталог</a>
+      <a href="about.html" class="links__item">Обо мне</a>
+      <a href="reviews.html" class="links__item">Отзывы</a>
+      <a href="contacts.html" class="links__item">Контакты</a>
+    </div>
+
+    <div class="credit">created by <span>Dima Banar</span> | all rights reserved</div>
+
+  </section>
+  <!-- footer sections ends -->
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/about.js"></script>
+</body>
+
+</html>

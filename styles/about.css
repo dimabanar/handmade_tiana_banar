@@ -1,0 +1,236 @@
+@import url('shared_2.css');
+.about {
+  background-color: white;
+  font-size: 1rem;
+  padding: 2em;
+  overflow: hidden;
+}
+
+.about__wrap,
+.about__order {
+  background-color: rgba(51, 56, 88, 0.9);
+  width: 100%;
+  border-radius: 15px;
+  padding: 2em;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.about__wrap h1,
+.about__order h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.about-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-box img {
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.about-box div {
+  margin: 10px;
+  font-size: 1.2em;
+  text-indent: 1.5em;
+  text-align: justify;
+  line-height: 1.8em;
+}
+
+.order-box {
+  width: 60%;
+  margin: 5em auto;
+  display: none;
+}
+
+.stage {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  padding: 2em;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(51, 56, 88, 0.9);
+  font-size: 1.1em;
+  text-align: center;
+  gap: 1em;
+}
+
+.stage::after {
+  content: '\2193';
+  font-size: 1.5em;
+}
+
+.stage:last-of-type.stage::after {
+  content: '\2714';
+}
+
+.stage div {
+  font-size: 2em;
+}
+
+.two,
+.four {
+  float: right;
+  margin-top: -4em;
+}
+
+.clear {
+  clear: both;
+}
+
+.show {
+  display: block;
+}
+
+.slideRight {
+  animation-name: slideRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-300%);
+  }
+  50% {
+    transform: translateX(8%);
+  }
+  65% {
+    transform: translateX(-4%);
+  }
+  80% {
+    transform: translateX(4%);
+  }
+  95% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slideLeft {
+  animation-name: slideLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(300%);
+  }
+  50% {
+    transform: translateX(-8%);
+  }
+  65% {
+    transform: translateX(4%);
+  }
+  80% {
+    transform: translateX(-4%);
+  }
+  95% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+/* about section media starts */
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .order-box {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .order-box {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .order-box {
+    width: 100%;
+  }
+  .stage {
+    margin: 1em 0;
+  }
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .order-box {
+    width: 100%;
+  }
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stage {
+    width: 200px;
+    height: 200px;
+    margin: 1em 0;
+  }
+  .stage::after {
+    content: '\2193';
+    font-size: 1em;
+  }
+  .stage:last-of-type.stage::after {
+    content: '\2714';
+  }
+  .stage div {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 320px) {
+  .order-box {
+    width: 100%;
+  }
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stage {
+    width: 170px;
+    height: 170px;
+    margin: 1em 0;
+  }
+  .stage::after {
+    content: '\2193';
+    font-size: 1em;
+  }
+  .stage:last-of-type.stage::after {
+    content: '\2714';
+  }
+  .stage div {
+    font-size: 1.5em;
+  }
+}
+
+
+/* about section media ends */

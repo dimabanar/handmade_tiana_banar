@@ -1,0 +1,364 @@
+@import url("shared_1.css");
+
+/* Positioning */
+
+
+/* Display and BoxModel */
+
+
+/* Color */
+
+
+/* Text */
+
+
+/* Other */
+
+
+/* section short about me starts */
+
+.background-short-about-me {
+  background-color: rgb(252, 252, 252);
+  height: 21rem;
+}
+
+.short-about-me {
+  font-family: 'Corinthia', cursive;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  color: rgb(51, 56, 88);
+  padding-bottom: 1rem;
+}
+
+.short-about-me .image img {
+  width: 23rem;
+  border-radius: 70% 30% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 0 5px 30px 0 rgba(15, 0, 0, 0.6);
+}
+
+.short-about-me h2 {
+  font-size: 2rem;
+}
+
+.short-about-me span {
+  font-size: 1.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content h2 {
+  margin-left: 20rem;
+}
+
+.content span:nth-of-type(1) {
+  margin-left: 5rem;
+}
+
+.content span:nth-of-type(3) {
+  color: white;
+  align-self: flex-end;
+}
+
+.content a {
+  display: block;
+  align-self: flex-start;
+  width: 20rem;
+  padding: .7rem 2rem;
+  color: #fff;
+  border: .1rem solid rgba(255, 255, 255, .3);
+  font-size: 1.2rem;
+}
+
+.content a:hover {
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0 5px 5px #f5e6d5;
+  transition: 0.2s linear;
+}
+
+
+/* section short about me ends */
+
+
+/* my products example section starts */
+
+.products-example {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  background-color: white;
+  margin-top: 15rem;
+  color: rgb(51, 56, 88);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.carousel {
+  width: 80%;
+  margin: 2rem auto;
+  background-color: rgb(51, 56, 88);
+}
+
+.carousel-item img {
+  width: 50%;
+  object-fit: contain;
+  height: 80vh;
+}
+
+
+/* my products example section ends */
+
+
+/* media  */
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* header media start */
+  /* header media ends */
+  /* main section starts*/
+  /* section short about me starts */
+  .short-about-me .image img {
+    width: 20rem;
+  }
+  .short-about-me h2 {
+    font-size: 1.5rem;
+  }
+  .short-about-me span {
+    font-size: 1.3rem;
+  }
+  .content h2 {
+    margin-left: 10rem;
+  }
+  .content span:nth-of-type(1) {
+    margin-left: 4rem;
+  }
+  .content span:nth-of-type(3) {
+    color: rgb(41, 29, 29);
+    align-self: flex-end;
+  }
+  .content a {
+    width: 15rem;
+  }
+  /* section short about me ends */
+  /* my products example section starts */
+  .products-example {
+    margin-top: 10rem;
+  }
+  /* my products example section ends */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* header media start */
+  /* header media ends */
+  /* main section starts*/
+  /* section short about me starts */
+  .short-about-me .image img {
+    width: 19rem;
+  }
+  .short-about-me h2 {
+    font-size: 1.2rem;
+  }
+  .short-about-me span {
+    font-size: 1.1rem;
+  }
+  .content h2 {
+    margin-left: 8rem;
+  }
+  .content span:nth-of-type(1) {
+    margin-left: 2rem;
+  }
+  .content span:nth-of-type(3) {
+    color: rgb(41, 29, 29);
+    align-self: flex-end;
+  }
+  .content a {
+    width: 15rem;
+    align-self: center;
+  }
+  /* section short about me ends */
+  /* my products example section starts */
+  .products-example {
+    margin-top: 7rem;
+  }
+  /* my products example section ends */
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  /* header media start */
+  /* header media ends */
+  /* main section starts*/
+  /* section short about me starts */
+  .short-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+  .short-about-me .image img {
+    width: 20rem;
+  }
+  .short-about-me h2 {
+    margin-left: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .content h2,
+  .content span {
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .content span:nth-of-type(1) {
+    margin-left: 0;
+  }
+  .content span:nth-of-type(3) {
+    color: white;
+    align-self: center;
+  }
+  .content a {
+    text-align: center;
+    width: 20rem;
+    align-self: center;
+  }
+  /* section short about me ends */
+  /* my products example section starts */
+  .products-example {
+    margin-top: 28rem;
+  }
+  /* my products example section ends */
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  /* header media start */
+  /* header media ends */
+  /* main section starts*/
+  /* section short about me starts */
+  .short-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .short-about-me .image img {
+    width: 18rem;
+  }
+  .short-about-me h2 {
+    margin-left: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .content h2,
+  .content span {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .content span:nth-of-type(1) {
+    margin-left: 0;
+  }
+  .content span:nth-of-type(3) {
+    color: white;
+    align-self: center;
+  }
+  .content a {
+    text-align: center;
+    width: 100%;
+  }
+  /* section short about me ends */
+  /* my products example section starts */
+  .products-example {
+    margin-top: 25rem;
+  }
+  .products-example h1 {
+    font-size: 2rem;
+  }
+  .products-example {
+    margin-top: 28rem;
+  }
+  /* my products example section ends */
+}
+
+@media (max-width: 320px) {
+  /* header media start */
+  .header__nav {
+    display: none;
+  }
+  .header__wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: stretch;
+    gap: 2rem;
+  }
+  .logo {
+    align-self: center;
+  }
+  /* header media ends */
+  /* main section starts*/
+  /* section short about me starts */
+  .short-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .short-about-me .image img {
+    width: 16rem;
+  }
+  .short-about-me h2 {
+    margin-left: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .content h2,
+  .content span {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .content span:nth-of-type(1) {
+    margin-left: 0;
+  }
+  .content span:nth-of-type(3) {
+    color: white;
+    align-self: center;
+  }
+  .content a {
+    text-align: center;
+    width: 100%;
+  }
+  /* section short about me ends */
+  /* my products example section starts */
+  .products-example {
+    margin-top: 25rem;
+  }
+  .products-example {
+    margin-top: 28rem;
+  }
+  /* my products example section ends */
+}

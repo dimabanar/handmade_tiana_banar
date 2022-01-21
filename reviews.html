@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/reviews.css">
+  <link rel="stylesheet" href="styles/shared_2.css">
+
+  <title>Отзывы</title>
+</head>
+
+<body>
+  <div id="arrowTop" hidden><i class="fas fa-chevron-up"></i></div>
+  <div class="background"></div>
+
+  <div class="backdrop-burger"></div>
+  <div class="backdrop-cart"></div>
+  <div class="cart-box">
+    <div class="fa fa-window-close close-btn" aria-hidden="true"></div>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <div class="fa fa-window-close close-btn" aria-hidden="true"></div>
+    <ul class="mobile-nav__items">
+      <li><a href="index.html" class="mobile-nav__item">Главная</a></li>
+      <li><a href="products.html" class="mobile-nav__item">Каталог</a></li>
+      <li><a href="about.html" class="mobile-nav__item">Обо мне</a></li>
+      <li><a href="reviews.html" class="mobile-nav__item">Отзывы</a></li>
+      <li><a href="contacts.html" class="mobile-nav__item">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <!-- header section start -->
+  <header class="header" id="header">
+
+    <div class="header__wrap">
+      <a href="#" class="logo">
+        <img src="images/logo1.png" alt="logo">
+      </a>
+
+      <nav class="header-nav">
+        <ul class="header-nav__items">
+          <li><a href="index.html" class="header-nav__item"><i class="fas fa-home"></i><span>Главная</span></a></li>
+          <li class="submenu">
+            <a href="products.html" class="header-nav__item ">
+              <i class="fas fa-briefcase"></i><span>Каталог</span> <i class="fas fa-angle-down icon-angle"></i>
+            </a>
+            <ul class="header-submenu__items">
+              <li><a href="pages/bracelets.html" class="header-submenu__item">Браслеты</a></li>
+              <li><a href="pages/brooches.html" class="header-submenu__item">Броши</a></li>
+              <li><a href="pages/bookmark.html" class="header-submenu__item">Закладки в книги</a></li>
+              <li><a href="pages/rings.html" class="header-submenu__item">Кольца</a></li>
+              <li><a href="pages/decoration-sets.html" class="header-submenu__item">Комплекты украшений</a></li>
+              <li><a href="pages/n-y-decoration.html" class="header-submenu__item">Новогодние украшения</a></li>
+              <li><a href="pages/earrings.html" class="header-submenu__item">Серьги</a></li>
+              <li><a href="pages/resin-earrings.html" class="header-submenu__item">Серьги из эпоксидной смолы</a></li>
+              <li><a href="pages/resin-brooch.html" class="header-submenu__item">Броши из эпоксидной смолы</a></li>
+              <li><a href="pages/neck-jewelry.html" class="header-submenu__item">Украшения на шею</a></li>
+              <li><a href="pages/clips.html" class="header-submenu__item">Клипсы</a></li>
+              <li><a href="pages/pendants.html" class="header-submenu__item">Кулоны из эпоксидной смолы</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="header-nav__item"><i class="fas fa-user"></i><span>Обо мне</span></a></li>
+          <li><a href="reviews.html" class="header-nav__item active"><i class="far fa-comments"></i><span>Отзывы</span></a></li>
+          <li><a href="contacts.html" class="header-nav__item"><i class="fas fa-address-card"></i><span>Контакты</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <div class="fas fa-search header-icons__item search-btn" id="search-btn"></div>
+        <div class="fas fa-shopping-cart header-icons__item" id="cart-btn"></div>
+        <div class="fas fa-bars header-icons__item burger-btn" id="burger-btn"></div>
+      </div>
+    </div>
+
+    <div class="header-bg">
+      <img src="images/shape-bg.png" alt="">
+    </div>
+
+  </header>
+
+  <!-- header section ends -->
+
+  <form action="#" method="get" id="search-box" class="search-box">
+    <input type="search" name="search" id="" placeholder="Поиск..." class="search-box__input">
+    <button type="submit" class="search-box__button"><i class="fas fa-search"></i></button>
+    <label for="search" class="search-box__label">
+    <i class="fas fa-times"></i>
+  </label>
+  </form>
+  <!-- reviews section start -->
+
+  <section class="reviews" id="reviews">
+
+    <h1 class="reviews__heading"> <span>Отзывы</span> покупателей</h1>
+
+    <div class="reviews__wrap">
+
+      <div class="reviews__box">
+
+        <div class="user">
+          <img src="images/img_review/avatar_4.svg" alt="user 1">
+        </div>
+
+        <div class="content-box">
+          <div class="fas fa-quote-left quote"></div>
+          <h2>Ткач Ольга, <span>28 лет</span></h2>
+          <p>
+            Спасибо большое за прекрасные украшения. Как всегда выполнено профессионально!
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__box">
+
+        <div class="user">
+          <img src="images/img_review/avatar_5.svg" alt="user 2">
+        </div>
+
+        <div class="content-box">
+          <div class="fas fa-quote-left quote"></div>
+          <h2>Иванова Инна, <span>25 лет</span></h2>
+          <p>
+            Спасибо большое, Татьяна. Все украшения ношу с удовольствием! Жду следующие новинки.
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__box">
+
+        <div class="user">
+          <img src="images/img_review/avatar_1.svg" alt="user 3">
+        </div>
+
+        <div class="content-box">
+          <div class="fas fa-quote-left quote"></div>
+          <h2>Иванов Иван, <span>30 лет</span></h2>
+          <p>
+            Жена хотела необычный подарок, сделанный своими руками. Спасибо Татьяна за прекрасные серьги. Жене очень понравилось!
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__box">
+
+        <div class="user">
+          <img src="images/img_review/avatar_8.svg" alt="user 4">
+        </div>
+
+        <div class="content-box">
+          <div class="fas fa-quote-left quote"></div>
+          <h2>Петров Петр, <span>35 лет</span></h2>
+          <p>
+            Прекрасные и необычные подарки для любого женского праздника. Спасибо за выполненный заказ. Изделие очень понравилось супруге.
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__box">
+
+        <div class="user">
+          <img src="images/img_review/avatar_7.svg" alt="user 5">
+        </div>
+
+        <div class="content-box">
+          <div class="fas fa-quote-left quote"></div>
+          <h2>Александрова Александра, <span>18 лет</span></h2>
+          <p>
+            Спасибо большое за быстро и качественно выполненную работу. Ношу с удовольствием.
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="reviews__button">Оставить отзыв</button>
+
+    <div class="backdrop-review"></div>
+
+    <div class="block-review">
+      <div class="fa fa-window-close close-review-btn" aria-hidden="true"></div>
+
+      <form name="comment" action="#" method="post" class="form-review">
+        <p>
+          <label for="first-name">Имя:</label>
+          <input type="text" name="first-name" required>
+        </p>
+        <p>
+          <label for="last-name">Фамилия:</label>
+          <input type="text" name="last-name" required>
+        </p>
+        <p>
+          <label for="age">Возраст:</label>
+          <input type="number" name="age" required>
+        </p>
+        <p>
+          <label for="last-name">Оценка:</label>
+          <div class="stars">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </p>
+        <p>
+          <label>Комментарий:</label>
+          <br/>
+          <textarea name="text_comment" rows="10" required></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Отправить" class="review-btn">
+          <input type="reset" value="Очистить" class="review-btn">
+        </p>
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- reviews section ends -->
+
+  <!-- footer sections starts -->
+  <section class="footer" id="footer">
+
+    <div class="share">
+      <a href="#" class="fab fa-facebook-f share__item"></a>
+      <a href="#" class="fab fa-twitter share__item"></a>
+      <a href="#" class="fab fa-instagram share__item"></a>
+      <a href="#" class="fab fa-vk share__item"></a>
+    </div>
+
+    <div class="links">
+      <a href="index.html" class="links__item">Главная</a>
+      <a href="products.html" class="links__item">Каталог</a>
+      <a href="about.html" class="links__item">Обо мне</a>
+      <a href="reviews.html" class="links__item">Отзывы</a>
+      <a href="contacts.html" class="links__item">Контакты</a>
+    </div>
+
+    <div class="credit">created by <span>Dima Banar</span> | all rights reserved</div>
+
+  </section>
+  <!-- footer sections ends -->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/reviews.js"></script>
+</body>
+
+</html>
